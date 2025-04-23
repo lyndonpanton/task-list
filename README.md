@@ -1,8 +1,8 @@
-# Todo
+# Task List
 
 ## Description
 
-An application that allows users to add items to a todo list. Todo list items
+An application that allows users to add items to a task list. Task list items
 can be modified and deleted.
 
 ## Getting Started
