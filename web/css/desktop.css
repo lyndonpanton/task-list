@@ -1,4 +1,8 @@
 /* Global *********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -10,10 +14,35 @@ body, html {
     font-weight: 400;
 }
 
+body > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    width: 100%;
+    min-height: 90vh;
+}
+
+#column-left {
+    width: 30vw;
+}
+
+#column-right {
+    width: 70vw;
+}
+
 /* Aside **********************************************************************/
+aside {
+    position: fixed;
+
+    width: 100%;
+}
 
 /* Header *********************************************************************/
 
 /* Main ***********************************************************************/
 
 /* Footer *********************************************************************/
+footer {
+    min-height: 10vh;
+}

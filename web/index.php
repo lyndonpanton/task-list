@@ -21,39 +21,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
     <!-- first party -->
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/desktop.css" />
+    <link rel="stylesheet" type="text/css" href="./css/laptop.css" />
+    <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
-    <aside>
-        <ul>
-            <!-- Appointments -->
-            <!-- Finance -->
-            <!-- Fitness -->
-            <!-- Food -->
-            <!-- Shopping -->
-            <!-- Social -->
-            <!-- Study -->
-            <!-- Work -->
-            <li>Appointment</li>
-            <li>Cooking</li>
-            <li>Finance</li>
-            <li>Fitness</li>
-            <li>Shopping</li>
-            <li>Social</li>
-            <li>Study</li>
-            <li>Work</li>
-        </ul>
-    </aside>
+    <section>
+        <section id="column-left" class="app-column">
+            <aside>
+                <nav id="main-nav">
+                    <ul id="main-nav-list">
+                        <li class="main-nav-list-item">All</li>
+                        <li class="main-nav-list-item">Appointment</li>
+                        <li class="main-nav-list-item">Cooking</li>
+                        <li class="main-nav-list-item">Finance</li>
+                        <li class="main-nav-list-item">Fitness</li>
+                        <li class="main-nav-list-item">Shopping</li>
+                        <li class="main-nav-list-item">Social</li>
+                        <li class="main-nav-list-item">Study</li>
+                        <li class="main-nav-list-item">Work</li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
 
-    <header>
-        <!-- Hamburger icon -->
-        <h1>Todo List</h1>
-    </header>
+        <section id="column-right" class="app-column">
+            <header>
+                <!-- Hamburger icon on smaller screen sizes -->
+                <h1>Todo List</h1>
+            </header>
 
-    <main>
+            <main>
 
-    </main>
+            </main>
+        </section>
+    </section>
 
     <footer>
         <p id="copyright">
