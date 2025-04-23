@@ -91,6 +91,23 @@ h2 {
     font-size: 2em;
 }
 
+.todo-list-input {
+    display: block;
+
+    margin-left: 40px;
+    border: 1px solid #BCBCBC;
+    border-radius: 0px;
+    width: 80%;
+    height: 40px;
+    padding: 0 20px;
+
+    font-size: 1.1em;
+}
+
+.todo-list-input::placeholder {
+    margin: 0 20px;
+}
+
 .todo-list > ul {
     /* padding-left: 20px; */
 

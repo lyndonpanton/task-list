@@ -54,8 +54,15 @@
             </header>
 
             <main>
-                <article class="todo-list">
+                <article id="appointment-todo-list" class="todo-list">
                     <h2>Appointment</h2>
+
+                    <!-- Add a plus icon -->
+                    <input
+                        type="text"
+                        class="todo-list-input"
+                        name="todo-list-input"
+                        placeholder="Add item..." />
 
                     <ul>
                         <li>Wash the dishes</li>
