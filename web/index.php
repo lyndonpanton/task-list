@@ -60,6 +60,42 @@
     </section>
 
     <footer>
+        <section id="developer">
+            <ul id="profiles" class="developer-list">
+                <li class="developer-list-item developer-list-item-heading">Developer Information</li>
+                <li class="developer-list-item">LinkedIn</li>
+                <li class="developer-list-item">GitHub</li>
+                <li class="developer-list-item">Website</li>
+            </ul>
+            <ul id="languages" class="developer-list">
+                <li class="developer-list-item developer-list-item-heading">Languages and Frameworks</li>
+                <li class="developer-list-item">HTML</li>
+                <li class="developer-list-item">CSS</li>
+                <li class="developer-list-item">JavaScript</li>
+                <li class="developer-list-item">PHP</li>
+                <li class="developer-list-item">MySQL</li>
+            </ul>
+            <ul id="libraries" class="developer-list">
+                <li class="developer-list-item developer-list-item-heading">Libraries and Packages</li>
+                <li class="developer-list-item">Fontawesome</li>
+                <li class="developer-list-item">Google Fonts</li>
+            </ul>
+            <ul id="projects" class="developer-list">
+                <li class="developer-list-item developer-list-item-heading">More Projects</li>
+                <li class="developer-list-item">Portfolio</li>
+                <li class="developer-list-item">Todo</li>
+                <li class="developer-list-item">???</li>
+                <li class="developer-list-item">???</li>
+            </ul>
+        </section>
+        <p id="social">
+            <p id="social-left">
+
+            </p>
+            <p id="social-right">
+
+            </p>
+        </p>
         <p id="copyright">
             &copy; <?php echo date("Y"); ?> Lyndon Mykal Panton
             | All Rights Reserved
