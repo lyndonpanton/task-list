@@ -54,7 +54,17 @@
             </header>
 
             <main>
+                <article class="todo-list">
+                    <h2>Appointment</h2>
 
+                    <ul>
+                        <li>Wash the dishes</li>
+                        <li>Do the laundry</li>
+                        <li>Walk the dog</li>
+                        <li>Buy some flour</li>
+                        <li>Go for a run</li>
+                    </ul>
+                </article>
             </main>
         </section>
     </section>

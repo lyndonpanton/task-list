@@ -85,6 +85,29 @@ h1 {
 }
 
 /* Main ***********************************************************************/
+h2 {
+    margin-left: 40px;
+
+    font-size: 2em;
+}
+
+.todo-list > ul {
+    /* padding-left: 20px; */
+
+    list-style-type: none;
+
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.todo-list > ul > li {
+    border-bottom: 1px solid #DEDEDE;
+    padding: 10px 0 30px 40px;
+}
+
+.todo-list > ul > li:first-child {
+    border-top: 1px solid #DEDEDE;
+}
 
 /* Footer *********************************************************************/
 footer {
