@@ -25,7 +25,22 @@
 <body>
     <aside>
         <ul>
-
+            <!-- Appointments -->
+            <!-- Finance -->
+            <!-- Fitness -->
+            <!-- Food -->
+            <!-- Shopping -->
+            <!-- Social -->
+            <!-- Study -->
+            <!-- Work -->
+            <li>Appointment</li>
+            <li>Cooking</li>
+            <li>Finance</li>
+            <li>Fitness</li>
+            <li>Shopping</li>
+            <li>Social</li>
+            <li>Study</li>
+            <li>Work</li>
         </ul>
     </aside>
 
