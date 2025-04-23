@@ -38,11 +38,16 @@ aside {
     position: relative;
 
     margin: 0;
-    border-right: 1px solid black;
-    padding: 0;
-
+    /* border-right: 1px solid black; */
     width: 100%;
     height: 100%;
+    padding: 0;
+
+    background-color: #F1F1FA;
+}
+
+#main-nav {
+    
 }
 
 #main-nav-list {
@@ -51,9 +56,11 @@ aside {
     
     /* background-color: #EDEDED; */
     
-    list-style-type: none;
-    
     font-size: 1.5em;
+
+    list-style-type: none;
+
+    overflow-y: scroll;
 }
 
 .main-nav-list-item {
@@ -63,7 +70,7 @@ aside {
 }
 
 .main-nav-list-item:hover {
-    background-color: #EFEFEF;
+    background-color: #E1E1EF;
 }
 
 /* Header *********************************************************************/
