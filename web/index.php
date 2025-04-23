@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <!-- meta -->
+    <!-- metadata -->
     <meta charset="UTF-8" />
     <meta name="application-name" content="todo" />
     <meta name="author" content="Lyndon Mykal Panton" />
@@ -23,6 +23,26 @@
     <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
-    
+    <aside>
+        <ul>
+
+        </ul>
+    </aside>
+
+    <header>
+        <!-- Hamburger icon -->
+        <h1>Todo List</h1>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <p id="copyright">
+            &copy; <?php echo date("Y"); ?> Lyndon Mykal Panton
+            | All Rights Reserved
+        </p>
+    </footer>
 </body>
 </html>
