@@ -81,6 +81,7 @@ h1 {
     padding: 0; */
 
     font-size: 3em;
+    margin-block: 0;
     text-align: center;
 }
 

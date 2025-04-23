@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+
     <!-- first party -->
     <link rel="stylesheet" type="text/css" href="./css/desktop.css" />
     <link rel="stylesheet" type="text/css" href="./css/laptop.css" />
@@ -96,6 +99,8 @@
                 <li class="developer-list-item developer-list-item-heading">Libraries and Packages</li>
                 <li class="developer-list-item">Fontawesome</li>
                 <li class="developer-list-item">Google Fonts</li>
+                <!-- https://favicon.io/favicon-generator/ -->
+                <li class="developer-list-item">Favicon.io</li>
             </ul>
             <ul id="projects" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">More Projects</li>
