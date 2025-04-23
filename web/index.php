@@ -6,13 +6,13 @@
     <meta name="application-name" content="todo" />
     <meta name="author" content="Lyndon Mykal Panton" />
     <meta name="description" content="An application that allows users to add
-            items to a todo list. Todo list items can be modified and deleted." />
-    <meta name="keywords" content="todo, list, app, management" />
+            items to a task list. Task list items can be modified and deleted." />
+    <meta name="keywords" content="task, tasks, todo, todos, list, app, management" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
             user-scalable=true, minimum-scale=0.25, maximum-scale=4" />
 
     <!-- title -->
-    <title>Todo List</title>
+    <title>Task List</title>
 
     <!-- third party -->
     <!-- { Font awesome API key } -->
