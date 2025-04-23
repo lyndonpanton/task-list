@@ -15,8 +15,10 @@
     <title>Todo List</title>
 
     <!-- third party -->
-    <!-- Font awesome -->
-    <!-- Google fonts -->
+    <!-- { Font awesome API key } -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
     <!-- first party -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
