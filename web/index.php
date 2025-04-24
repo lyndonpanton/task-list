@@ -87,34 +87,34 @@
 
                     <ul>
                         <li>
-                            <i class="fa-solid fa-circle task-checkbox"></i>
-                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <span class="task-text">Wash the dishes</span>
-                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                            <i class="fa-solid fa-pen task-update"></i>
+                            <i class="fa-solid fa-circle-xmark task-delete"></i>
                         </li>
                         <li>
-                            <i class="fa-solid fa-circle task-checkbox"></i>
-                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <span class="task-text">Do the laundry</span>
-                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                            <i class="fa-solid fa-pen task-update"></i>
+                            <i class="fa-solid fa-circle-xmark task-delete"></i>
                         </li>
                         <li>
-                            <i class="fa-solid fa-circle task-checkbox"></i>
-                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <span class="task-text">Walk the dog</span>
-                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                            <i class="fa-solid fa-pen task-update"></i>
+                            <i class="fa-solid fa-circle-xmark task-delete"></i>
                         </li>
                         <li>
-                            <i class="fa-solid fa-circle task-checkbox"></i>
-                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <span class="task-text">Buy some flour</span>
-                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                            <i class="fa-solid fa-pen task-update"></i>
+                            <i class="fa-solid fa-circle-xmark task-delete"></i>
                         </li>
                         <li>
-                            <i class="fa-solid fa-circle task-checkbox"></i>
-                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <span class="task-text">Go for a run</span>
-                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                            <i class="fa-solid fa-pen task-update"></i>
+                            <i class="fa-solid fa-circle-xmark task-delete"></i>
                         </li>
                     </ul>
                 </article>

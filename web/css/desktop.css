@@ -144,12 +144,24 @@ h2 {
 
 .task-list > ul > li > .task-checkbox {
     color: white;
-    -webkit-text-stroke: 1px black;
 }
 
-.task-list > ul > li > .task-cross {
-    color: lightsteelblue;
-    /* -webkit-text-stroke: 1px black; */
+.task-list > ul > li > .task-unchecked {
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+.task-list > ul > li > .task-checked {
+    color: lightgreen;
+}
+
+.task-list > ul > li > .task-delete {
+
+}
+
+.task-text-faded {
+    color: lightgrey;
+    text-decoration: line-through;
 }
 
 /* Footer *********************************************************************/

@@ -11,10 +11,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     let taskCheckboxes = document.getElementsByClassName("task-checkbox");
     for (let i = 0; i < taskCheckboxes.length; i++) {
-        taskCheckboxes[i].addEventListener("click", crossTask);
+        taskCheckboxes[i].addEventListener("click", completeTask);
     }
 
-    let taskCrosses = document.getElementsByClassName("task-cross")
+    let taskPens = document.getElementsByClassName("task-update");
+    for (let i = 0; i < taskPens.length; i++) {
+        taskPens[i].addEventListener("click", changeTask);
+    }
+
+    let taskCrosses = document.getElementsByClassName("task-delete")
     for (let i = 0; i < taskCrosses.length; i++) {
         taskCrosses[i].addEventListener("click", deleteTask);
     }
@@ -55,14 +60,42 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function changeTask(e) {
+        // Make fetch request...
 
+        // Change UI...
     }
 
-    function crossTask(e) {
+    function completeTask(e) {
+        let completeIcon = e.target;
+        // Make fetch request...
 
+        // Change UI...
+        if (completeIcon.classList.contains("fa-circle")) {
+            // Change icon
+            completeIcon.classList.remove("fa-circle");
+            completeIcon.classList.add("fa-circle-check");
+
+            // Change icon class
+            completeIcon.classList.remove("task-unchecked");
+            completeIcon.classList.add("task-checked");
+
+            // Change sibling font
+            completeIcon.parentElement.getElementsByClassName("task-text")[0].classList.add("task-text-faded");
+            
+        } else {
+            completeIcon.classList.remove("fa-circle-check");
+            completeIcon.classList.add("fa-circle");
+            
+            completeIcon.classList.remove("task-checked");
+            completeIcon.classList.add("task-unchecked");
+            
+            completeIcon.parentElement.getElementsByClassName("task-text")[0].classList.remove("task-text-faded");
+        }
     }
 
     function deleteTask(e) {
-
+        // Make fetch request...
+        
+        // Change UI...
     }
 });
