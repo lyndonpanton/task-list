@@ -50,6 +50,7 @@
                         <li class="main-nav-list-item">All</li>
                         <li class="main-nav-list-item">Appointment</li>
                         <li class="main-nav-list-item">Cooking</li>
+                        <li class="main-nav-list-item">Entertainment</li>
                         <li class="main-nav-list-item">Finance</li>
                         <li class="main-nav-list-item">Fitness</li>
                         <li class="main-nav-list-item">Shopping</li>
@@ -71,13 +72,13 @@
                 <article id="appointment-task-list" class="task-list">
                     <h2>Appointment</h2>
 
-                    <!-- Add a plus icon -->
                     <form action="./" method="POST" class="task-list-form">
                         <input
-                            type="text"
-                            class="task-list-input"
-                            name="task-list-input"
-                            placeholder="Add item..." />
+                        type="text"
+                        class="task-list-input"
+                        name="task-list-input"
+                        placeholder="Add item..." />
+                        <!-- Change to plus icon? -->
                         <input
                             type="submit"
                             class="task-list-submit"
@@ -85,11 +86,36 @@
                     </form>
 
                     <ul>
-                        <li>Wash the dishes</li>
-                        <li>Do the laundry</li>
-                        <li>Walk the dog</li>
-                        <li>Buy some flour</li>
-                        <li>Go for a run</li>
+                        <li>
+                            <i class="fa-solid fa-circle task-checkbox"></i>
+                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <span class="task-text">Wash the dishes</span>
+                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle task-checkbox"></i>
+                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <span class="task-text">Do the laundry</span>
+                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle task-checkbox"></i>
+                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <span class="task-text">Walk the dog</span>
+                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle task-checkbox"></i>
+                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <span class="task-text">Buy some flour</span>
+                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle task-checkbox"></i>
+                            <!-- <i class="fa-solid fa-circle-check task-tick"></i> -->
+                            <span class="task-text">Go for a run</span>
+                            <i class="fa-solid fa-circle-xmark task-cross"></i>
+                        </li>
                     </ul>
                 </article>
             </main>
