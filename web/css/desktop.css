@@ -92,12 +92,14 @@ h2 {
     font-size: 2em;
 }
 
-.todo-list-input {
-    display: block;
+.task-list-form {
+    /* display: flex;
+    flex-direction: row; */
+}
 
+.task-list-input {
     margin-left: 40px;
     border: 1px solid #BCBCBC;
-    border-radius: 0px;
     width: 80%;
     height: 40px;
     padding: 0 20px;
@@ -105,11 +107,24 @@ h2 {
     font-size: 1.1em;
 }
 
-.todo-list-input::placeholder {
+.task-list-input::placeholder {
     margin: 0 20px;
 }
 
-.todo-list > ul {
+.task-list-submit {
+    margin: 0 10px;
+    border: 1px solid #BCBCBC;
+    width: 8%;
+    height: 40px;
+
+    font-size: 1.1em;
+}
+
+.task-list-submit:focus {
+
+}
+
+.task-list > ul {
     /* padding-left: 20px; */
 
     list-style-type: none;
@@ -118,12 +133,12 @@ h2 {
     font-weight: 300;
 }
 
-.todo-list > ul > li {
+.task-list > ul > li {
     border-bottom: 1px solid #DEDEDE;
     padding: 10px 0 30px 40px;
 }
 
-.todo-list > ul > li:first-child {
+.task-list > ul > li:first-child {
     border-top: 1px solid #DEDEDE;
 }
 

@@ -12,11 +12,11 @@
 <head>
     <!-- metadata -->
     <meta charset="UTF-8" />
-    <meta name="application-name" content="todo" />
+    <meta name="application-name" content="Task List" />
     <meta name="author" content="Lyndon Mykal Panton" />
     <meta name="description" content="An application that allows users to add
             items to a task list. Task list items can be modified and deleted." />
-    <meta name="keywords" content="task, tasks, todo, todos, list, app, management" />
+    <meta name="keywords" content="task, tasks, task, tasks, list, app, management" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
             user-scalable=true, minimum-scale=0.25, maximum-scale=4" />
 
@@ -38,6 +38,12 @@
     <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <script type="text/javascript" src="./js/script.js"></script>
+    <script>
+        function addTask(e) {
+            e.preventDefault();
+            console.log("ok");
+        }
+    </script>
 </head>
 <body>
     <section>
@@ -62,19 +68,25 @@
         <section id="column-right" class="app-column">
             <header>
                 <!-- Hamburger icon on smaller screen sizes -->
-                <h1>Todo List</h1>
+                <h1>Task List</h1>
             </header>
 
             <main>
-                <article id="appointment-todo-list" class="todo-list">
+                <article id="appointment-task-list" class="task-list">
                     <h2>Appointment</h2>
 
                     <!-- Add a plus icon -->
-                    <input
-                        type="text"
-                        class="todo-list-input"
-                        name="todo-list-input"
-                        placeholder="Add item..." />
+                    <form action="./" method="POST" class="task-list-form">
+                        <input
+                            type="text"
+                            class="task-list-input"
+                            name="task-list-input"
+                            placeholder="Add item..." />
+                        <input
+                            type="submit"
+                            class="task-list-submit"
+                            value="Add" />
+                    </form>
 
                     <ul>
                         <li>Wash the dishes</li>
@@ -114,7 +126,7 @@
             <ul id="projects" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">More Projects</li>
                 <li class="developer-list-item">Portfolio</li>
-                <li class="developer-list-item">Todo</li>
+                <li class="developer-list-item">Task List</li>
                 <li class="developer-list-item">???</li>
                 <li class="developer-list-item">???</li>
             </ul>
