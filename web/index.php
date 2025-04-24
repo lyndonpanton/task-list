@@ -40,12 +40,6 @@
     <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
     <script type="text/javascript" src="./js/script.js"></script>
-    <script>
-        function addTask(e) {
-            e.preventDefault();
-            console.log("ok");
-        }
-    </script>
 </head>
 <body>
     <section>
