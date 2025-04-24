@@ -6,7 +6,7 @@
     $password = DATABASE_PASSWORD;
     $name = DATABASE_NAME;
 
-    // Is there a POST request
+    // Is there a POST request?
     if (isset($_POST)) {
         // php://input allows reading raw data from the request body
         $data = file_get_contents("php://input");
@@ -19,11 +19,23 @@
         // Create it is it does not already exists
         // Add the todo item to the table
 
+        $name = $task["name"];
+        $category_id = $task["categoryId"];
+        
+        // $statement = "INSERT INTO tasks (name, category_id, is_complete)
+        //         VALUES (
+        //         '" . $name . "', " . $category_id . ", " . 0 . ");";
+        $statement = "INSERT INTO tasks (name, category_id, is_complete)
+                VALUES (
+                    '$name', $category_id, 0
+                );";
+        $conn->query($statement);
 
+        // send primitive data as a promise to the javascript file
+        // echo $name;
+        // echo $category_id;
 
-        // simple data to send as a promise to the javascript file
-        echo $task;
-        // if you want to send an entire object, you can encode it
-        // echo json_encode(/* object */);
+        // if you want to send an entire object, you should encode it
+        echo json_encode($task);
     }
 ?>
