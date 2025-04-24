@@ -5,9 +5,18 @@ document.addEventListener("DOMContentLoaded", function (e) {
         - Populate the main content with the gathered data
     */
     let taskListForms = document.getElementsByClassName("task-list-form");
-
     for (let i = 0; i < taskListForms.length; i++) {
         taskListForms[i].addEventListener("submit", addTask);
+    }
+
+    let taskCheckboxes = document.getElementsByClassName("task-checkbox");
+    for (let i = 0; i < taskCheckboxes.length; i++) {
+        taskCheckboxes[i].addEventListener("click", crossTask);
+    }
+
+    let taskCrosses = document.getElementsByClassName("task-cross")
+    for (let i = 0; i < taskCrosses.length; i++) {
+        taskCrosses[i].addEventListener("click", deleteTask);
     }
 
     function addTask(e) {
@@ -43,5 +52,17 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
             e.target.children[0].value = "";
         });
+    }
+
+    function changeTask(e) {
+
+    }
+
+    function crossTask(e) {
+
+    }
+
+    function deleteTask(e) {
+
     }
 });
