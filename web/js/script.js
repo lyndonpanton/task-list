@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
         task.appendChild(text);
         taskList.appendChild(task);
 
-        console.log("Task added: " + e.target.children[0].value);
         e.target.children[0].value = "";
     }
 });
