@@ -1,3 +1,12 @@
+<?php
+    include("config.php");
+
+    $host = DATABASE_HOST;
+    $user = DATABASE_USER;
+    $password = DATABASE_PASSWORD;
+    $name = DATABASE_NAME;
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
