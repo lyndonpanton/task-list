@@ -160,8 +160,10 @@ h2 {
 }
 
 .task-text {
-    border: none;
+    border: 2px solid transparent;
+    outline: none;
 
+    color: black;
     font-size: 0.9em;
 }
 
@@ -171,7 +173,7 @@ h2 {
 }
 
 .task-input-editing {
-    border: 1px solid lightgreen;
+    border: 2px solid lightgreen;
 }
 
 .task-pen-editing {

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         - Make a request to the PHP and gather data from the database
         - Populate the main content with the gathered data
     */
+   
     let taskListForms = document.getElementsByClassName("task-list-form");
     for (let i = 0; i < taskListForms.length; i++) {
         taskListForms[i].addEventListener("submit", addTask);
@@ -14,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
         taskCheckboxes[i].addEventListener("click", completeTask);
     }
 
+    let taskInputs = document.getElementsByClassName("task-text");
+    for (let i = 0; i < taskInputs.length; i++) {
+        taskInputs[i].addEventListener("keypress", updateTaskText);
+    }
+    
     let taskPens = document.getElementsByClassName("task-update");
     for (let i = 0; i < taskPens.length; i++) {
         taskPens[i].addEventListener("click", toggleTaskEditable);
@@ -101,29 +107,26 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // Do not allow if task is complete?...
         
         // Make all other tasks not editable...
-
-        // Make fetch request and change database...
         
         // Change content (editable, pen styling, textbox styling)...
         let taskPen = e.target;
         let taskInput = taskPen.parentElement.getElementsByClassName("task-text")[0];
 
-        console.log(taskInput.readOnly);
-
         if (taskInput.readOnly === true) {
-            console.log("Task can be edited");
-
             taskInput.readOnly = false;
+            taskInput.disabled = false;
 
             taskInput.classList.add("task-input-editing");
             taskPen.classList.add("task-pen-editing");
         } else {
-            console.log("Task cannot be edited");
-            
             taskInput.readOnly = true;
+            taskInput.disabled = true;
 
             taskInput.classList.remove("task-input-editing");
             taskPen.classList.remove("task-pen-editing");
+
+            // Make fetch request and change database...
+            // updateTask(e);
         }
     }
 
@@ -135,10 +138,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     // Input field key pressed event
     function updateTaskText(e) {
-        // Do not allow escape characters, character limit (see database)...
+        // Do not allow escape characters, character limit (see database schema)...
 
-        // Make fetch request and change database...
-
-        // Change content (task text?, temporary styling)...
+        if (e.code == "Enter" && !e.target.readOnly) {
+            console.log("Enter key was pressed");
+            toggleTaskEditable(e);
+            // updateTask(e);
+        }
     }
 });
