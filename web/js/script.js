@@ -55,11 +55,36 @@ document.addEventListener("DOMContentLoaded", function (e) {
             // Determine which task list to add the task to...
 
             let taskList = e.target.parentElement.children[2];
+            
             let task = document.createElement("li");
-            let text = document.createTextNode(data.name);
+            task.classList.add("task-list-item");
 
+            let completeIcon = document.createElement("i");
+            completeIcon.classList.add("fa-solid", "fa-circle", "task-checkbox", "task-unchecked");
+
+            let text = document.createElement("input");
+            text.classList.add("task-text");
+            text.type = "text";
+            text.value = data.name;
+
+            let editElement = document.createElement("article");
+            editElement.classList.add("task-edit");
+
+            let updateIcon = document.createElement("i");
+            updateIcon.classList.add("fa-solid", "fa-pen", "task-update");
+
+            let deleteIcon = document.createElement("i");
+            deleteIcon.classList.add("fa-solid", "fa-circle-xmark", "task-delete");
+
+            editElement.appendChild(updateIcon);
+            editElement.appendChild(deleteIcon);
+
+            task.appendChild(completeIcon);
             task.appendChild(text);
+            task.appendChild(editElement);
             taskList.appendChild(task);
+
+            // Add to database...
 
             e.target.children[0].value = "";
         });
