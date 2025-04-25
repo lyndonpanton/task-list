@@ -98,17 +98,24 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function toggleTaskEditable(e) {
-        // Do not allow if task if complete?...
+        // Do not allow if task is complete?...
+        
+        // Make all other tasks not editable...
 
         // Make fetch request and change database...
         
         // Change content (editable, pen styling, textbox styling)...
-        let textBox = e.target.parentElement.getElementsByClassName("task-text")[0];
+        let taskPen = e.target;
+        let taskInput = taskPen.parentElement.getElementsByClassName("task-text")[0];
 
-        if (textBox.contentEditable === "true") {
-            textBox.contentEditable = "false";
+        if (taskInput.contentEditable === "true") {
+            taskInput.contentEditable = "false";
+            taskInput.classList.remove("task-input-editing");
+            taskPen.classList.remove("task-pen-editing");
         } else {
-            textBox.contentEditable = "true";
+            taskInput.contentEditable = "true";
+            taskInput.classList.add("task-input-editing");
+            taskPen.classList.add("task-pen-editing");
         }
     }
 
