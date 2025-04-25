@@ -131,8 +131,17 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // Make all other tasks not editable...
         
         // Change content (editable, pen styling, textbox styling)...
-        let taskPen = e.target;
-        let taskInput = taskPen.parentElement.parentElement.getElementsByClassName("task-text")[0];
+
+        let taskPen;
+        let taskInput;
+
+        if (e.target.classList.contains("task-update")) {
+            taskPen = e.target;
+            taskInput = taskPen.parentElement.parentElement.getElementsByClassName("task-text")[0];
+        } else {
+            taskPen = e.target.parentElement.getElementsByClassName("task-update")[0];
+            taskInput = e.target;
+        }
 
         if (taskInput.readOnly === true) {
             taskInput.readOnly = false;
