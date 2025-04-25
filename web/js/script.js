@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         - Make a request to the PHP and gather data from the database
         - Populate the main content with the gathered data
     */
-   
+
     let taskListForms = document.getElementsByClassName("task-list-form");
     for (let i = 0; i < taskListForms.length; i++) {
         taskListForms[i].addEventListener("submit", addTask);
@@ -72,15 +72,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
         // Change content...
         if (completeIcon.classList.contains("fa-circle")) {
-            // Change icon
             completeIcon.classList.remove("fa-circle");
             completeIcon.classList.add("fa-circle-check");
 
-            // Change icon class
             completeIcon.classList.remove("task-unchecked");
             completeIcon.classList.add("task-checked");
 
-            // Change sibling font
             completeIcon.parentElement.getElementsByClassName("task-text")[0].classList.add("task-text-faded");
             
         } else {
@@ -138,7 +135,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     // Input field key pressed event
     function updateTaskText(e) {
-        // Do not allow escape characters, character limit (see database schema)...
+        // Do not allow escape characters, character limit (see database
+        // schema)...
 
         if (e.code == "Enter" && !e.target.readOnly) {
             console.log("Enter key was pressed");
