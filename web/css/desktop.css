@@ -159,6 +159,12 @@ h2 {
 
 }
 
+.task-text {
+    border: none;
+
+    font-size: 0.9em;
+}
+
 .task-text-faded {
     color: lightgrey;
     text-decoration: line-through;

@@ -108,14 +108,22 @@ document.addEventListener("DOMContentLoaded", function (e) {
         let taskPen = e.target;
         let taskInput = taskPen.parentElement.getElementsByClassName("task-text")[0];
 
-        if (taskInput.contentEditable === "true") {
-            taskInput.contentEditable = "false";
-            taskInput.classList.remove("task-input-editing");
-            taskPen.classList.remove("task-pen-editing");
-        } else {
-            taskInput.contentEditable = "true";
+        console.log(taskInput.readOnly);
+
+        if (taskInput.readOnly === true) {
+            console.log("Task can be edited");
+
+            taskInput.readOnly = false;
+
             taskInput.classList.add("task-input-editing");
             taskPen.classList.add("task-pen-editing");
+        } else {
+            console.log("Task cannot be edited");
+            
+            taskInput.readOnly = true;
+
+            taskInput.classList.remove("task-input-editing");
+            taskPen.classList.remove("task-pen-editing");
         }
     }
 
