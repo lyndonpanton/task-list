@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function deleteTask(e) {
-        let task = e.target.parentElement;
+        let task = e.target.parentElement.parentElement;
         task.remove();
 
         // Make fetch request and change database...
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         
         // Change content (editable, pen styling, textbox styling)...
         let taskPen = e.target;
-        let taskInput = taskPen.parentElement.getElementsByClassName("task-text")[0];
+        let taskInput = taskPen.parentElement.parentElement.getElementsByClassName("task-text")[0];
 
         if (taskInput.readOnly === true) {
             taskInput.readOnly = false;

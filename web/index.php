@@ -86,41 +86,51 @@
                     </form>
 
                     <ul>
-                        <li>
+                        <li class="task-list-item">
                             <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <!-- <span class="task-text">Wash the dishes</span> -->
                             <input type="text" class="task-text" value="Wash the dishes" readonly />
                             <!-- <input type="text" id="country" name="country" value="Norway" readonly><br><br> -->
-                            <i class="fa-solid fa-pen task-update"></i>
-                            <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            <article class="task-edit">
+                                <i class="fa-solid fa-pen task-update"></i>
+                                <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            </article>
                         </li>
-                        <li>
+                        <li class="task-list-item">
                             <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <!-- <span class="task-text">Do the laundry</span> -->
                             <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <i class="fa-solid fa-pen task-update"></i>
-                            <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            <article class="task-edit">
+                                <i class="fa-solid fa-pen task-update"></i>
+                                <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            </article>
                         </li>
-                        <li>
+                        <li class="task-list-item">
                             <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <!-- <span class="task-text">Walk the dog</span> -->
                             <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <i class="fa-solid fa-pen task-update"></i>
-                            <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            <article class="task-edit">
+                                <i class="fa-solid fa-pen task-update"></i>
+                                <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            </article>
                         </li>
-                        <li>
+                        <li class="task-list-item">
                             <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <!-- <span class="task-text">Buy some flour</span> -->
                             <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <i class="fa-solid fa-pen task-update"></i>
-                            <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            <article class="task-edit">
+                                <i class="fa-solid fa-pen task-update"></i>
+                                <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            </article>
                         </li>
-                        <li>
+                        <li class="task-list-item">
                             <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
                             <!-- <span class="task-text">Go for a run</span> -->
                             <input type="text" class="task-text" value="Go for a run" readonly />
-                            <i class="fa-solid fa-pen task-update"></i>
-                            <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            <article class="task-edit">
+                                <i class="fa-solid fa-pen task-update"></i>
+                                <i class="fa-solid fa-circle-xmark task-delete"></i>
+                            </article>
                         </li>
                     </ul>
                 </article>
