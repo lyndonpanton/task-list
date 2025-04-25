@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     let taskPens = document.getElementsByClassName("task-update");
     for (let i = 0; i < taskPens.length; i++) {
-        taskPens[i].addEventListener("click", changeTask);
+        taskPens[i].addEventListener("click", toggleTaskEditable);
+        console.log("Task is now editable");
     }
 
-    let taskCrosses = document.getElementsByClassName("task-delete")
+    let taskCrosses = document.getElementsByClassName("task-delete");
     for (let i = 0; i < taskCrosses.length; i++) {
         taskCrosses[i].addEventListener("click", deleteTask);
     }
@@ -59,12 +60,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
         });
     }
 
-    function changeTask(e) {
-        // Make fetch request...
-
-        // Change UI...
-    }
-
     function completeTask(e) {
         let completeIcon = e.target;
         // Make fetch request...
@@ -97,5 +92,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // Make fetch request...
         
         // Change UI...
+    }
+
+    function toggleTaskEditable(e) {
+        // Do not allow if task if complete?...
+        
+        // Make fetch request...
+        let textBox = e.target.parentElement.getElementsByClassName("task-text")[0];
+
+        if (textBox.contentEditable === "true") {
+            textBox.contentEditable = "false";
+        } else {
+            textBox.contentEditable = "true";
+        }
+
+        // Change UI (pen styling, textbox styling)...
     }
 });

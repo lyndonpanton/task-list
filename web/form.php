@@ -22,9 +22,6 @@
         $name = $task["name"];
         $category_id = $task["categoryId"];
         
-        // $statement = "INSERT INTO tasks (name, category_id, is_complete)
-        //         VALUES (
-        //         '" . $name . "', " . $category_id . ", " . 0 . ");";
         $statement = "INSERT INTO tasks (name, category_id, is_complete)
                 VALUES (
                     '$name', $category_id, 0
