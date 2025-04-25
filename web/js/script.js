@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     let taskPens = document.getElementsByClassName("task-update");
     for (let i = 0; i < taskPens.length; i++) {
         taskPens[i].addEventListener("click", toggleTaskEditable);
-        console.log("Task is now editable");
     }
 
     let taskCrosses = document.getElementsByClassName("task-delete");
@@ -62,9 +61,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     function completeTask(e) {
         let completeIcon = e.target;
-        // Make fetch request...
 
-        // Change UI...
+        // Make fetch request and change database...
+
+        // Change content...
         if (completeIcon.classList.contains("fa-circle")) {
             // Change icon
             completeIcon.classList.remove("fa-circle");
@@ -89,15 +89,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function deleteTask(e) {
-        // Make fetch request...
+        let task = e.target.parentElement;
+        task.remove();
+
+        // Make fetch request and change database...
         
-        // Change UI...
+        // Change content (remove task)...
     }
 
     function toggleTaskEditable(e) {
         // Do not allow if task if complete?...
+
+        // Make fetch request and change database...
         
-        // Make fetch request...
+        // Change content (editable, pen styling, textbox styling)...
         let textBox = e.target.parentElement.getElementsByClassName("task-text")[0];
 
         if (textBox.contentEditable === "true") {
@@ -105,7 +110,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
         } else {
             textBox.contentEditable = "true";
         }
+    }
 
-        // Change UI (pen styling, textbox styling)...
+    function updateTask(e) {
+        // Do not allow submission if task is empty (red outline, popup)...
+
+        // Change content (task text)...
+    }
+
+    // Input field key pressed event
+    function updateTaskText(e) {
+        // Do not allow escape characters, character limit (see database)...
+
+        // Make fetch request and change database...
+
+        // Change content (task text?, temporary styling)...
     }
 });
