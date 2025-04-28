@@ -33,6 +33,41 @@ document.addEventListener("DOMContentLoaded", function (e) {
     function addTask(e) {
         e.preventDefault();
 
+        let name = e.target.children[0].value;
+        let hyphenIndex = e.target.parentElement.indexOf("-");
+        let categoryString = e.target.parentElement.id.substring(0, hyphenIndex);
+        let categoryId;
+
+        switch (categoryString) {
+            case "appointment":
+                categoryId = 1;
+                break;
+            case "cooking":
+                categoryId = 2;
+                break;
+            case "entertainment":
+                categoryId = 3;
+                break;
+            case "finance":
+                categoryId = 4;
+                break;
+            case "fitness":
+                categoryId = 5;
+                break;
+            case "shopping":
+                categoryId = 6;
+                break;
+            case "social":
+                categoryId = 7;
+                break;
+            case "study":
+                categoryId = 8;
+                break;
+            case "work":
+                categoryId = 9;
+                break;
+        }
+
         fetch("form.php", {
             method: "POST",
             headers: {
@@ -42,8 +77,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
             // body: JSON.stringify(e.target.children[0].value)
             body: JSON.stringify({
                 // id = AUTO_INCREMENT
-                "name": e.target.children[0].value,
-                "categoryId": "3",
+                "name": name,
+                "categoryId": categoryId,
                 // is_complete = false
             })
         }).then(function (response) {
