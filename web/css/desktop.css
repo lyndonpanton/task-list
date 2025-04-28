@@ -1,6 +1,7 @@
 /* Global *********************************************************************/
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, html {
@@ -12,6 +13,7 @@ body, html {
     font-style: normal;
     font-variation-settings: "slnt" 0;
     font-weight: 400;
+
 }
 
 body > section {

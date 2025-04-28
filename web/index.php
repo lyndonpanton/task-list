@@ -47,15 +47,15 @@
             <aside>
                 <nav id="main-nav">
                     <ul id="main-nav-list">
-                        <li class="main-nav-list-item">Appointment</li>
-                        <li class="main-nav-list-item">Cooking</li>
-                        <li class="main-nav-list-item">Entertainment</li>
-                        <li class="main-nav-list-item">Finance</li>
-                        <li class="main-nav-list-item">Fitness</li>
-                        <li class="main-nav-list-item">Shopping</li>
-                        <li class="main-nav-list-item">Social</li>
-                        <li class="main-nav-list-item">Study</li>
-                        <li class="main-nav-list-item">Work</li>
+                        <li class="main-nav-list-item"><a href="#appointment-task-list">Appointment</a></li>
+                        <li class="main-nav-list-item"><a href="#cooking-task-list">Cooking</a></li>
+                        <li class="main-nav-list-item"><a href="#entertainment-task-list">Entertainment</a></li>
+                        <li class="main-nav-list-item"><a href="#finance-task-list">Finance</a></li>
+                        <li class="main-nav-list-item"><a href="#fitness-task-list">Fitness</a></li>
+                        <li class="main-nav-list-item"><a href="#shopping-task-list">Shopping</a></li>
+                        <li class="main-nav-list-item"><a href="#social-task-list">Social</a></li>
+                        <li class="main-nav-list-item"><a href="#study-task-list">Study</a></li>
+                        <li class="main-nav-list-item"><a href="#work-task-list">Work</a></li>
                     </ul>
                 </nav>
             </aside>
