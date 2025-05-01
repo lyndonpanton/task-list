@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 break;
         }
 
-        fetch("form.php", {
+        fetch("post.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=utf-8"
