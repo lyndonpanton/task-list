@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             name = e.target.value;
         }
 
-        fetch("put_is_complete.php", {
+        fetch("put_edit.php", {
             method: "PUT",
             body: JSON.stringify({
                 "id": id,
@@ -312,8 +312,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
         }).then(function (data) {
             console.log(data);
         });
-
-        // Change content (task text)...
     }
 
     function updateTaskText(e) {

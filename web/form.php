@@ -7,14 +7,15 @@
     $name = DATABASE_NAME;
 
     // Is there a POST request?
+    
     if (isset($_POST)) {
+        $conn = new mysqli($host, $user, $password, $name);
+        
         // php://input allows reading raw data from the request body
         $data = file_get_contents("php://input");
         // true means that it will return an array, otherwise an object
         $task = json_decode($data, true);
-
-        $conn = new mysqli($host, $user, $password, $name);
-
+    
         // Determine which table to add to
         // Create it is it does not already exists
         // Add the todo item to the table
