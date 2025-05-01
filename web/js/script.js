@@ -275,24 +275,53 @@ document.addEventListener("DOMContentLoaded", function (e) {
             taskPen.classList.remove("task-pen-editing");
 
             // Make fetch request and change database...
-            // updateTask(e);
+            updateTask(e);
         }
     }
 
     function updateTask(e) {
         // Do not allow submission if task is empty (red outline, popup)...
 
+        // Update database
+
+        // Is event on input field or pen icon?
+        let id;
+        let name;
+
+        if (e.target.classList.contains("task-update")) {
+            id = e.target.parentElement.parentElement.id.slice(
+                e.target.parentElement.parentElement.id.indexOf("-") + 1
+            );
+            name = e.target.parentElement.parentElement.getElementsByClassName("task-text")[0].value;
+        } else {
+            id = e.target.parentElement.id.slice(
+                e.target.parentElement.id.indexOf("-") + 1
+            );
+            name = e.target.value;
+        }
+
+        fetch("put_is_complete.php", {
+            method: "PUT",
+            body: JSON.stringify({
+                "id": id,
+                "name": name
+            }),
+        }).then(function (response) {
+            return response.text();
+            // return response.json();
+        }).then(function (data) {
+            console.log(data);
+        });
+
         // Change content (task text)...
     }
 
-    // Input field key pressed event
     function updateTaskText(e) {
         // Do not allow escape characters, character limit (see database
         // schema)...
 
         if (e.code == "Enter" && !e.target.readOnly) {
             toggleTaskEditable(e);
-            // updateTask(e);
         }
     }
 });

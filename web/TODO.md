@@ -9,7 +9,7 @@ A list of stories for this project.
 ### Create
 
 - [x] Tasks should be added to the correct database category
-- Tasks should have attribute(s) to relate them to tables and rows in the
+- [x] Tasks should have attribute(s) to relate them to tables and rows in the
 database
 
 ### Read
