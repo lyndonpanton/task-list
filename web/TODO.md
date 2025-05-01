@@ -19,7 +19,7 @@ database
 
 ### Update
 
-- [ ] When a task is made editable, all other task should be made uneditable
+- [ ] **When a task is made editable, all other task should be made uneditable**
 - [x] Update the related task in the database
 
 ### Delete
@@ -34,9 +34,10 @@ separator between them instead of switching categories via the sidebar
 
 ### Styling
 
+- [ ] **Task text should take up the majority of the width of the parent element**
+- [ ] **Project should adapt to different viewports**
 - [x] Circle icons should be left-aligned
 - [x] Task text should be left-aligned, to the right of checkboxes
-- Task text should take up the majority of the width of the parent element
 - [x] Pen icons should be right-aligned, to the left of delete icons
 - [x] Delete icons should be right-aligned
 
@@ -46,24 +47,24 @@ separator between them instead of switching categories via the sidebar
 
 ### Validation
 
-- Create
-    - Do not allow users to make an empty task
-        - Client-side
-        - Server-side
-    - Restrict character limit of tasks
-        - Client-side
-        - Server-side
-- Read
-- Update
-    - Restrict character limit of tasks
-        - Client-side
-        - Server-side
-    - Do not allow users to edit a task to be empty
-    - Restrict type of characters allowed
-        - Client-side
-        - Server-side
-- Delete
-    - Warn user if they attempt to delete an incomplete task
+- [ ] Create
+    - [ ] **Do not allow users to make an empty task**
+        - [ ] Client-side
+        - [ ] Server-side
+    - [ ] Restrict character limit of tasks
+        - [ ] Client-side
+        - [ ] Server-side
+- [x] Read
+- [ ] Update
+    - [ ] **Restrict character limit of tasks**
+        - [ ] Client-side
+        - [ ] Server-side
+    - [ ] **Do not allow users to edit a task to be empty**
+    - [ ] **Restrict type of characters allowed**
+        - [ ] Client-side
+        - [ ] Server-side
+- [ ] Delete
+    - [ ] **Warn user if they attempt to delete an incomplete task**
 
 ### Bugs
 
