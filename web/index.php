@@ -85,46 +85,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="cooking-task-list" class="task-list">
@@ -144,46 +105,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="entertainment-task-list" class="task-list">
@@ -203,46 +125,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="finance-task-list" class="task-list">
@@ -262,46 +145,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="fitness-task-list" class="task-list">
@@ -321,46 +165,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="shopping-task-list" class="task-list">
@@ -380,46 +185,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="social-task-list" class="task-list">
@@ -439,46 +205,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="study-task-list" class="task-list">
@@ -498,46 +225,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
                 <article id="work-task-list" class="task-list">
@@ -557,46 +245,7 @@
                     </form>
 
                     <ul>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Wash the dishes" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Do the laundry" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Walk the dog" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Buy some flour" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
-                        <li class="task-list-item">
-                            <i class="fa-solid fa-circle task-checkbox task-unchecked"></i>
-                            <input type="text" class="task-text" value="Go for a run" readonly />
-                            <article class="task-edit">
-                                <i class="fa-solid fa-pen task-update"></i>
-                                <i class="fa-solid fa-circle-xmark task-delete"></i>
-                            </article>
-                        </li>
+                        
                     </ul>
                 </article>
             </main>
