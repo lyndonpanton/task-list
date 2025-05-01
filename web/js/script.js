@@ -179,17 +179,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
             return response.text();
             // return response.json();
         }).then(function (data) {
-            console.log(data);
+            // console.log(data);
         });
     }
 
     function deleteTask(e) {
+        // Change content (remove task)...
         let task = e.target.parentElement.parentElement;
+        let id = task.id.slice(task.id.indexOf("-") + 1);
+
         task.remove();
 
         // Make fetch request and change database...
-        
-        // Change content (remove task)...
+        fetch("delete.php", {
+            method: "DELETE",
+            body: JSON.stringify({
+                "id": id
+            })
+        }).then(function (response) {
+            return response.text();
+        }).then(function (data) {
+            // console.log(data);
+        });
     }
 
     function readTaskList() {
@@ -332,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             return response.text();
             // return response.json();
         }).then(function (data) {
-            console.log(data);
+            // console.log(data);
         });
     }
 

@@ -7,10 +7,9 @@
     $name = DATABASE_NAME;
 
     // Is there a POST request?
-    
     if (isset($_POST)) {
         $conn = new mysqli($host, $user, $password, $name);
-        
+
         // php://input allows reading raw data from the request body
         $data = file_get_contents("php://input");
         // true means that it will return an array, otherwise an object
