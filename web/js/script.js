@@ -114,6 +114,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
             let deleteIcon = document.createElement("i");
             deleteIcon.classList.add("fa-solid", "fa-circle-xmark", "task-delete");
+            
+            completeIcon.addEventListener("click", completeTask);
+            text.addEventListener("keypress", updateTaskText);
+            updateIcon.addEventListener("click", toggleTaskEditable);
+            deleteIcon.addEventListener("click", deleteTask);
 
             editElement.appendChild(updateIcon);
             editElement.appendChild(deleteIcon);
@@ -216,6 +221,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
                 let deleteIcon = document.createElement("i");
                 deleteIcon.classList.add("fa-solid", "fa-circle-xmark", "task-delete");
+            
+                completeIcon.addEventListener("click", completeTask);
+                text.addEventListener("keypress", updateTaskText);
+                updateIcon.addEventListener("click", toggleTaskEditable);
+                deleteIcon.addEventListener("click", deleteTask);
 
                 editElement.appendChild(updateIcon);
                 editElement.appendChild(deleteIcon);
