@@ -19,18 +19,18 @@ database
 
 ### Update
 
-- When a task is made editable, all other task should be made uneditable
-- Update the related task in the database
+- [ ] When a task is made editable, all other task should be made uneditable
+- [x] Update the related task in the database
 
 ### Delete
 
-- Delete the related task in the database
+- [x] Delete the related task in the database
 
 ### Content
 
 - [x] It may be better display all categories tasks at all times and have a
 separator between them instead of switching categories via the sidebar
-    - The sidebar should instead use anchor navigation
+    - [x] The sidebar should instead use anchor navigation
 
 ### Styling
 
