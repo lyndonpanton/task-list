@@ -103,6 +103,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
             text.classList.add("task-text");
             text.type = "text";
             text.value = data.name;
+            text.readOnly = true;
+            text.disabled = true;
 
             let editElement = document.createElement("article");
             editElement.classList.add("task-edit");
@@ -171,7 +173,59 @@ document.addEventListener("DOMContentLoaded", function (e) {
             return response.json();
         }).then(function (data) {
             // Use the response data to populate the document
-            console.log(data);
+            // console.log(data);
+            let main = document.getElementsByTagName("main")[0];
+
+            for (let task in data) {
+                // console.log(data[task]["category_id"] - 1);
+                // ids in database are 1-index wheresa ids in client
+                // interface are 0-index
+                let taskList = main
+                        .getElementsByClassName("task-list")[data[task]["category_id"] - 1]
+                        .getElementsByTagName("ul")[0];
+
+                // Build task list item...          
+                let currentTask = document.createElement("li");
+                currentTask.classList.add("task-list-item");
+
+                let completeIcon = document.createElement("i");
+                completeIcon.classList.add("fa-solid", "task-checkbox");
+
+                let text = document.createElement("input");
+                text.classList.add("task-text");
+                text.type = "text";
+                text.value = data[task]["name"];
+                text.readOnly = true;
+                text.disabled = true;
+                
+                if (data[task]["is_complete"] === "1") {
+                    completeIcon.classList.add("fa-circle-check");
+                    completeIcon.classList.add("task-checked");
+
+                    text.classList.add("task-text-faded");
+                } else {
+                    completeIcon.classList.add("fa-circle");
+                    completeIcon.classList.add("task-unchecked");
+                }
+
+                let editElement = document.createElement("article");
+                editElement.classList.add("task-edit");
+
+                let updateIcon = document.createElement("i");
+                updateIcon.classList.add("fa-solid", "fa-pen", "task-update");
+
+                let deleteIcon = document.createElement("i");
+                deleteIcon.classList.add("fa-solid", "fa-circle-xmark", "task-delete");
+
+                editElement.appendChild(updateIcon);
+                editElement.appendChild(deleteIcon);
+
+                currentTask.appendChild(completeIcon);
+                currentTask.appendChild(text);
+                currentTask.appendChild(editElement);
+
+                taskList.appendChild(currentTask);
+            }
         });
     }
 

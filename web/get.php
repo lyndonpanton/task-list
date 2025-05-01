@@ -16,13 +16,6 @@
         if ($result == TRUE) {
             $tasks = mysqli_fetch_all($result, MYSQLI_ASSOC);
             echo json_encode($tasks);
-            // print_r($tasks);
         }
-
-        // if (mysqli_num_rows($result) > 0) {
-        //     while ($row = mysqli_fetch_assoc($result)) {
-        //         echo $row["username"] . ": " . $row["email"] . "<br />";
-        //     }
-        // }
     }
 ?>
