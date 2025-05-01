@@ -16,9 +16,15 @@
         $task = json_decode($data, true);
 
         $id = $task["id"];
-        $name = $task["name"];
+        $is_complete = $task["is_complete"];
 
-        // echo "PUT request was sent successfully";
-        echo $name;
+        $statement = "UPDATE tasks
+                SET is_complete = $is_complete
+                WHERE id = $id";
+        $result = $conn->query($statement);
+
+        if ($result == TRUE) {
+            echo "PUT request was sent successfully";
+        }
     }
 ?>

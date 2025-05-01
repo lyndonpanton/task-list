@@ -138,7 +138,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
     function completeTask(e) {
         let completeIcon = e.target;
 
-        // Make fetch request and change database...
+        let id = e.target.parentElement.id.slice(
+            e.target.parentElement.id.indexOf("-") + 1
+        );
+        let isComplete;
 
         // Change content...
         if (completeIcon.classList.contains("fa-circle")) {
@@ -149,7 +152,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
             completeIcon.classList.add("task-checked");
 
             completeIcon.parentElement.getElementsByClassName("task-text")[0].classList.add("task-text-faded");
-            
+
+            isComplete = 1;
         } else {
             completeIcon.classList.remove("fa-circle-check");
             completeIcon.classList.add("fa-circle");
@@ -158,7 +162,25 @@ document.addEventListener("DOMContentLoaded", function (e) {
             completeIcon.classList.add("task-unchecked");
             
             completeIcon.parentElement.getElementsByClassName("task-text")[0].classList.remove("task-text-faded");
+            isComplete = 0;
         }
+
+        console.log(isComplete);
+        console.log(id);
+
+        // Make fetch request and change database...
+        fetch("put_complete.php", {
+            method: "PUT",
+            body: JSON.stringify({
+                "id": id,
+                "is_complete": isComplete
+            })
+        }).then(function (response) {
+            return response.text();
+            // return response.json();
+        }).then(function (data) {
+            console.log(data);
+        });
     }
 
     function deleteTask(e) {
