@@ -13,7 +13,7 @@
         // true means that it will return an array, otherwise an object
         $task = json_decode($data, true);
 
-        $conn = new mysqli(DATABASE_HOST, DATABASE_USER, DATABASE_PASSWORD, DATABASE_NAME);
+        $conn = new mysqli($host, $user, $password, $name);
 
         // Determine which table to add to
         // Create it is it does not already exists

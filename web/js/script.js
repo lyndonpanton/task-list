@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
         - Populate the main content with the gathered data
     */
 
+    readTaskList();
+
     let taskListForms = document.getElementsByClassName("task-list-form");
     for (let i = 0; i < taskListForms.length; i++) {
         taskListForms[i].addEventListener("submit", addTask);
@@ -119,8 +121,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
             task.appendChild(editElement);
             taskList.appendChild(task);
 
-            // Add to database...
-
             e.target.children[0].value = "";
         });
     }
@@ -158,6 +158,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // Make fetch request and change database...
         
         // Change content (remove task)...
+    }
+
+    function readTaskList() {
+        fetch("get.php", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            }
+        }).then(function (response) {
+            // return response.text();
+            return response.json();
+        }).then(function (data) {
+            // Use the response data to populate the document
+            console.log(data);
+        });
     }
 
     function toggleTaskEditable(e) {
