@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         e.preventDefault();
 
         let name = e.target.children[0].value;
-        let hyphenIndex = e.target.parentElement.indexOf("-");
+        let hyphenIndex = e.target.parentElement.id.indexOf("-");
         let categoryString = e.target.parentElement.id.substring(0, hyphenIndex);
         let categoryId;
 
