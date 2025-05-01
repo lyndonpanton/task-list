@@ -4,28 +4,6 @@
 
 A list of stories for this project.
 
-## List
-
-### Create
-
-- [x] Tasks should be added to the correct database category
-- [x] Tasks should have attribute(s) to relate them to tables and rows in the
-database
-
-### Read
-
-- [x] Retrieve tasks from the database on page load
-- [x] Display tasks from the database on page load
-
-### Update
-
-- [ ] **When a task is made editable, all other task should be made uneditable**
-- [x] Update the related task in the database
-
-### Delete
-
-- [x] Delete the related task in the database
-
 ### Content
 
 - [x] It may be better display all categories tasks at all times and have a
@@ -41,8 +19,17 @@ separator between them instead of switching categories via the sidebar
 - [x] Pen icons should be right-aligned, to the left of delete icons
 - [x] Delete icons should be right-aligned
 
-### Interactivity
+### Interaction
 
+- [ ] Red pop-up should be displayed when a user attempts an invalid action
+    - Create an empty task
+    - Create a task that is too long (see database)
+    - Create a task that contains invalid characters (see mysql documentation)
+    - Update a task to be empty
+    - Update a task that does not exist
+    - Delete a task that does not exist
+- [ ] Orange pop-up should be displayed when a user attempt a dangerous action
+    - Delete a task that is not complete
 - [x] Users should be able to change between task categories
 
 ### Validation
@@ -65,6 +52,23 @@ separator between them instead of switching categories via the sidebar
         - [ ] Server-side
 - [ ] Delete
     - [ ] **Warn user if they attempt to delete an incomplete task**
+
+### Server Routing
+
+### Database Operations
+
+- Create
+    - [x] Tasks should be added to the correct database category
+    - [x] Tasks should have attribute(s) to relate them to tables and rows in the
+    database
+- Read
+    - [x] Retrieve tasks from the database on page load
+    - [x] Display tasks from the database on page load
+- Update
+    - [ ] **When a task is made editable, all other task should be made uneditable**
+    - [x] Update the related task in the database
+- Delete
+    - [x] Delete the related task in the database
 
 ### Bugs
 
