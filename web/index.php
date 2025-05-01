@@ -607,31 +607,61 @@
         <section id="developer">
             <ul id="profiles" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">Developer Information</li>
-                <li class="developer-list-item">LinkedIn</li>
-                <li class="developer-list-item">GitHub</li>
-                <li class="developer-list-item">Website</li>
+                <li class="developer-list-item">
+                    <a href="https://www.linkedin.com/in/lyndonpanton/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://github.com/lyndonpanton" target="_blank">GitHub</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://lyndonpanton.co.uk/" target="_blank">Website</a>
+                </li>
             </ul>
             <ul id="languages" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">Languages and Frameworks</li>
-                <li class="developer-list-item">HTML</li>
-                <li class="developer-list-item">CSS</li>
-                <li class="developer-list-item">JavaScript</li>
-                <li class="developer-list-item">PHP</li>
-                <li class="developer-list-item">MySQL</li>
+                <li class="developer-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://www.php.net/" target="_blank">PHP</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+                </li>
             </ul>
             <ul id="libraries" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">Libraries and Packages</li>
-                <li class="developer-list-item">Fontawesome</li>
-                <li class="developer-list-item">Google Fonts</li>
+                <li class="developer-list-item">
+                    <a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                </li>
                 <!-- https://favicon.io/favicon-generator/ -->
-                <li class="developer-list-item">Favicon.io</li>
+                <li class="developer-list-item">
+                    <a href="" target="_blank">Favicon.io</a>
+                </li>
             </ul>
             <ul id="projects" class="developer-list">
                 <li class="developer-list-item developer-list-item-heading">More Projects</li>
-                <li class="developer-list-item">Portfolio</li>
-                <li class="developer-list-item">Task List</li>
-                <li class="developer-list-item">???</li>
-                <li class="developer-list-item">???</li>
+                <li class="developer-list-item">
+                    <a href="https://github.com/lyndonpanton/portfolio" target="_blank">Portfolio</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="https://github.com/lyndonpanton/task-list" target="_blank">Task List</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="#">???</a>
+                </li>
+                <li class="developer-list-item">
+                    <a href="#">???</a>
+                </li>
             </ul>
         </section>
         <p id="social">

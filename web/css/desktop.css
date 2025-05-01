@@ -243,15 +243,24 @@ footer {
     list-style-type: none;
 }
 
-.developer-list-item {
-    padding-bottom: 10px;
-}
-
 .developer-list-item-heading {
     padding-bottom: 20px;
 
     font-size: 1.3em;
     font-weight: 500;
+    text-decoration: underline;
+}
+
+.developer-list-item {
+    padding-bottom: 10px;
+}
+
+.developer-list-item > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.developer-list-item > a:hover {
     text-decoration: underline;
 }
 
