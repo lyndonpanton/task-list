@@ -8,14 +8,14 @@ A list of stories for this project.
 
 ### Create
 
-- Tasks should be added to the correct database category
+- [x] Tasks should be added to the correct database category
 - Tasks should have attribute(s) to relate them to tables and rows in the
 database
 
 ### Read
 
-- Retrieve tasks from the database on page load
-- Display tasks from the database on page load
+- [x] Retrieve tasks from the database on page load
+- [x] Display tasks from the database on page load
 
 ### Update
 
@@ -28,21 +28,21 @@ database
 
 ### Content
 
-- It may be better display all categories tasks at all times and have a
+- [x] It may be better display all categories tasks at all times and have a
 separator between them instead of switching categories via the sidebar
     - The sidebar should instead use anchor navigation
 
 ### Styling
 
-- Circle icons should be left-aligned
-- Task text should be left-aligned, to the right of checkboxes
+- [x] Circle icons should be left-aligned
+- [x] Task text should be left-aligned, to the right of checkboxes
 - Task text should take up the majority of the width of the parent element
-- Pen icons should be right-aligned, to the left of delete icons
-- Delete icons should be right-aligned
+- [x] Pen icons should be right-aligned, to the left of delete icons
+- [x] Delete icons should be right-aligned
 
 ### Interactivity
 
-- Users should be able to change between task categories
+- [x] Users should be able to change between task categories
 
 ### Validation
 
@@ -67,6 +67,6 @@ separator between them instead of switching categories via the sidebar
 
 ### Bugs
 
-- Overflow of task categories increases parent element (and page) size
-- Overflow of tasks increases parent element (and page size)
-- Tasks are not displayed in their correct categories
+- [x] Overflow of task categories increases parent element (and page) size
+- [x] Overflow of tasks increases parent element (and page size)
+- [x] Tasks are not displayed in their correct categories
