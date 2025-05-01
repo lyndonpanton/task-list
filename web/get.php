@@ -10,7 +10,7 @@
     if (isset($_GET)) {
         $conn = new mysqli($host, $user, $password, $name);
 
-        $statement = "SELECT name, category_id, is_complete FROM tasks";
+        $statement = "SELECT id, name, category_id, is_complete FROM tasks";
         $result = $conn->query($statement);
 
         if ($result == TRUE) {

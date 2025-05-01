@@ -68,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
             case "work":
                 categoryId = 9;
                 break;
+            default:
+                categoryId = 1;
+                break;
         }
 
         fetch("form.php", {
@@ -80,8 +83,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             body: JSON.stringify({
                 // id = AUTO_INCREMENT
                 "name": name,
-                "categoryId": categoryId,
-                // is_complete = false
+                "categoryId": categoryId
             })
         }).then(function (response) {
             // simple data "echoed" from the php file
@@ -95,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             
             let task = document.createElement("li");
             task.classList.add("task-list-item");
+            task.id = "task-" + data.id;
 
             let completeIcon = document.createElement("i");
             completeIcon.classList.add("fa-solid", "fa-circle", "task-checkbox", "task-unchecked");
@@ -192,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 // Build task list item...          
                 let currentTask = document.createElement("li");
                 currentTask.classList.add("task-list-item");
+                currentTask.id = "task-" + data[task]["id"];
 
                 let completeIcon = document.createElement("i");
                 completeIcon.classList.add("fa-solid", "task-checkbox");
@@ -287,7 +291,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // schema)...
 
         if (e.code == "Enter" && !e.target.readOnly) {
-            console.log("Enter key was pressed");
             toggleTaskEditable(e);
             // updateTask(e);
         }

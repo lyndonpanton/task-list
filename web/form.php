@@ -26,13 +26,21 @@
                 VALUES (
                     '$name', $category_id, 0
                 );";
-        $conn->query($statement);
+        $result = $conn->query($statement);
 
-        // send primitive data as a promise to the javascript file
-        // echo $name;
-        // echo $category_id;
+        if ($result == TRUE) {
+            // Read new item
+            // $tasks = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            $task["id"] = $conn->insert_id;
+            // $task["id"] = $tasks[0]["id"];
+            // print_r($result);
 
-        // if you want to send an entire object, you should encode it
-        echo json_encode($task);
+            // send primitive data as a promise to the javascript file
+            // echo $name;
+            // echo $category_id;
+
+            // if you want to send an entire object, you should encode it
+            echo json_encode($task);
+        }
     }
 ?>
