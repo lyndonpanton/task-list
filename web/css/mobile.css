@@ -1,5 +1,29 @@
 @media screen and (max-width: 767px) {
     /* Global */
+    
+    /* Popup ******************************************************************/
+    #popup {
+        left: 15vw;
+
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .popup-error {
+        border: 6px solid #EECCEE;
+    }
+
+    .popup-warning {
+        border: 6px solid lightcoral;
+    }
+
+    .popup-title {
+        
+    }
+
+    .popup-text {
+        
+    }
 
     /* Aside */
     #column-left {

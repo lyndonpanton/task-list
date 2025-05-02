@@ -1,5 +1,26 @@
 @media screen and (max-width: 1024px) {
     /* Global */
+    
+    /* Popup ******************************************************************/
+    #popup {
+        
+    }
+
+    .popup-error {
+        border: 8px solid #EECCEE;
+    }
+
+    .popup-warning {
+        border: 8px solid lightcoral;
+    }
+
+    .popup-title {
+        
+    }
+
+    .popup-text {
+        
+    }
 
     /* Aside */
     #main-nav-list {
