@@ -64,6 +64,7 @@
         <section id="column-right" class="app-column">
             <header>
                 <!-- Hamburger icon on smaller screen sizes -->
+                <i id="hamburger" class="fa-solid fa-bars" tabindex="1"></i>
                 <h1>Task List</h1>
             </header>
 

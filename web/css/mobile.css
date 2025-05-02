@@ -17,6 +17,16 @@
         width: 100%;
     }
 
+    #hamburger {
+        display: block;
+
+        position: absolute;
+        top: 22px;
+        left: 30px;
+
+        font-size: 1.5em;
+    }
+
     h1 {
         padding-top: 10px;
 
