@@ -1,3 +1,133 @@
 @media screen and (max-width: 767px) {
+    /* Global */
 
+    /* Aside */
+    #column-left {
+        display: none;
+        /* display: block; */
+        /* width: 100%; */
+    }
+
+    #main-nav-list {
+        font-size: 1.1em;
+    }
+
+    /* Header */
+    #column-right {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 10px;
+
+        font-size: 2.4em;
+    }
+
+    /* Main */
+    h2 {
+        margin-left: 25px;
+
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .task-list-input {
+        margin-left: 20vw;
+        width: 50vw;
+        height: 25px;
+    }
+
+    .task-list-submit {
+        width: 15vw;
+        height: 25px;
+
+        font-size: 1em;
+    }
+
+    .task-list > ul {
+        font-size: 0.9em;
+    }
+
+    .task-checkbox {
+
+    }
+
+    .task-text {
+        /* width: 50vw; */
+    }
+
+    .task-checked {
+
+    }
+
+    .task-unchecked {
+
+    }
+
+    .task-edit {
+
+    }
+
+    .task-update {
+        margin-bottom: 10px;
+    }
+
+    .task-delete {
+
+    }
+
+    .task-list-input {
+
+    }
+
+    .task-list-submit {
+
+    }
+
+    /* Footer */
+    #developer {
+        display: block;
+        /* grid-template-columns: 1fr; */
+        /* justify-items: center; */
+
+        /* margin: 0; */
+        /* padding-left: 10%; */
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        text-align: center !important;
+    }
+
+    #developer-list {
+        margin-left: 0;
+    }
+
+    .developer-list {
+        margin: 0;
+    }
+
+    .developer-list-item-heading {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .developer-list-item {
+        text-align: center;
+    }
+
+    .developer-list-item > a {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    #copyright {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    
+        font-size: 0.9em;
+    }
 }
