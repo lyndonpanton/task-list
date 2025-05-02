@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (e) {
-    /* WHEN THE DOCUMENT HAS LOADED
-
-        - Make a request to the PHP and gather data from the database
-        - Populate the main content with the gathered data
-    */
-
     readTaskList();
 
     let taskListForms = document.getElementsByClassName("task-list-form");

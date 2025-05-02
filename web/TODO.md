@@ -14,6 +14,10 @@ separator between them instead of switching categories via the sidebar
 
 - [ ] **Task text should take up the majority of the width of the parent element**
 - [ ] **Project should adapt to different viewports**
+    - [x] Desktop
+    - [x] Laptop
+    - [ ] Tablet
+    - [ ] Mobile
 - [x] Circle icons should be left-aligned
 - [x] Task text should be left-aligned, to the right of checkboxes
 - [x] Pen icons should be right-aligned, to the left of delete icons
@@ -52,6 +56,12 @@ separator between them instead of switching categories via the sidebar
         - [ ] Server-side
 - [ ] Delete
     - [ ] **Warn user if they attempt to delete an incomplete task**
+
+### Accessibility
+
+- Tab index
+- w3c validator
+- Skip to main content
 
 ### Server Routing
 

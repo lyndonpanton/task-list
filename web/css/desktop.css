@@ -13,7 +13,6 @@ body, html {
     font-style: normal;
     font-variation-settings: "slnt" 0;
     font-weight: 400;
-
 }
 
 body > section {
@@ -180,9 +179,13 @@ h2 {
 }
 
 .task-text {
-    border: 2px solid transparent;
-    outline: none;
+    display: block;
 
+    margin-left: 10px;
+    border: 2px solid transparent;
+    width: 50vw;
+    
+    outline: none;
     color: black;
     font-size: 0.9em;
 }
@@ -228,8 +231,6 @@ footer {
     justify-content: space-around;
 
     padding: 40px 0 40px 0;
-
-    font-size: 1.2em;
 }
 
 .developer-list {
@@ -244,9 +245,9 @@ footer {
 }
 
 .developer-list-item-heading {
-    padding-bottom: 20px;
+    margin-bottom: 25px;
 
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: 500;
     text-decoration: underline;
 }
@@ -258,6 +259,7 @@ footer {
 .developer-list-item > a {
     color: inherit;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 .developer-list-item > a:hover {
@@ -270,6 +272,8 @@ footer {
 
 #copyright {
     border-top: 1px solid #DBDBDB;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    font-size: 1.2em;
 }

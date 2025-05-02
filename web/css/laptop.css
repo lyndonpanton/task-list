@@ -1,0 +1,94 @@
+@media screen and (max-width: 1440px) {
+    /* Global */
+
+    /* Aside */
+    #main-nav-list {
+        font-size: 1.4em;
+    }
+
+    /* Header */
+    h1 {
+        padding-top: 20px;
+
+        font-size: 2.8em;
+    }
+
+    /* Main */
+    h2 {
+        margin-left: 35px;
+
+        font-size: 1.8em;
+    }
+
+    .task-list-input {
+        margin-left: 35px;
+        /* width: 75%; */
+        height: 35px;
+    }
+
+    .task-list-submit {
+        /* margin-left: 35px; */
+        height: 35px;
+    }
+
+    .task-list > ul {
+        font-size: 1.1em;
+    }
+
+    .task-checkbox {
+
+    }
+
+    .task-text {
+        
+    }
+
+    .task-checked {
+
+    }
+
+    .task-unchecked {
+
+    }
+
+    .task-edit {
+
+    }
+
+    .task-update {
+        margin-bottom: 15px;
+    }
+
+    .task-delete {
+
+    }
+
+    .task-list-input {
+
+    }
+
+    .task-list-submit {
+
+    }
+
+    /* Footer */
+    #developer-list {
+
+    }
+
+    .developer-list-item-heading {
+        font-size: 1.4em;
+    }
+
+    .developer-list-item > a {
+        font-size: 1.1em;
+    }
+
+    #copyright {
+        border-top: 1px solid #DBDBDB;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    
+        font-size: 1.1em;
+    }
+}
