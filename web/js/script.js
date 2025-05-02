@@ -35,6 +35,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
         e.preventDefault();
 
         let name = e.target.children[0].value;
+        
+        if (name.trim().length === 0) {
+            displayPopup(e, "error", "You cannot create an empty task!");
+            return;
+        }
+
         let hyphenIndex = e.target.parentElement.id.indexOf("-");
         let categoryString = e.target.parentElement.id.substring(0, hyphenIndex);
         let categoryId;
@@ -344,7 +350,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function updateTask(e) {
-        // Do not allow submission if task is empty (red outline, popup)...
 
         // Update database
 
@@ -362,6 +367,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 e.target.parentElement.id.indexOf("-") + 1
             );
             name = e.target.value;
+        }
+
+        // Do not allow submission if task is empty (red outline, popup)...
+        if (name.trim().length === 0) {
+            displayPopup(e, "error", "You cannot update a task to be empty!");
+            return;
         }
 
         fetch("put_edit.php", {

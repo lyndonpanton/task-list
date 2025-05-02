@@ -40,17 +40,19 @@ separator between them instead of switching categories via the sidebar
 
 - [ ] Create
     - [ ] **Do not allow users to make an empty task**
-        - [ ] Client-side
+        - [x] Client-side
         - [ ] Server-side
     - [ ] Restrict character limit of tasks
         - [ ] Client-side
         - [ ] Server-side
 - [x] Read
 - [ ] Update
-    - [ ] **Restrict character limit of tasks**
+    - [ ] **Restrict character limit of tasks** (80 characters)
         - [ ] Client-side
         - [ ] Server-side
     - [ ] **Do not allow users to edit a task to be empty**
+        - [x] Client-side
+        - [ ] Server-side
     - [ ] **Restrict type of characters allowed**
         - [ ] Client-side
         - [ ] Server-side
