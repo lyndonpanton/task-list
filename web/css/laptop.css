@@ -22,12 +22,10 @@
 
     .task-list-input {
         margin-left: 35px;
-        /* width: 75%; */
         height: 35px;
     }
 
     .task-list-submit {
-        /* margin-left: 35px; */
         height: 35px;
     }
 
@@ -72,6 +70,10 @@
     }
 
     /* Footer */
+    #developer {
+
+    }
+
     #developer-list {
 
     }
@@ -85,7 +87,6 @@
     }
 
     #copyright {
-        border-top: 1px solid #DBDBDB;
         padding-top: 25px;
         padding-bottom: 10px;
     

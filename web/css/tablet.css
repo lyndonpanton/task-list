@@ -1,3 +1,105 @@
 @media screen and (max-width: 1024px) {
+    /* Global */
 
+    /* Aside */
+    #main-nav-list {
+        font-size: 1.3em;
+    }
+
+    /* Header */
+    h1 {
+        padding-top: 15px;
+
+        font-size: 2.6em;
+    }
+
+    /* Main */
+    h2 {
+        margin-left: 30px;
+
+        font-size: 1.6em;
+    }
+
+    .task-list-input {
+        margin-left: 30px;
+        height: 30px;
+    }
+
+    .task-list-submit {
+        height: 30px;
+    }
+
+    .task-list > ul {
+        font-size: 1em;
+    }
+
+    .task-checkbox {
+
+    }
+
+    .task-text {
+        
+    }
+
+    .task-checked {
+
+    }
+
+    .task-unchecked {
+
+    }
+
+    .task-edit {
+
+    }
+
+    .task-update {
+        margin-bottom: 10px;
+    }
+
+    .task-delete {
+
+    }
+
+    .task-list-input {
+
+    }
+
+    .task-list-submit {
+
+    }
+
+    /* Footer */
+    #developer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* justify-items: center; */
+
+        padding-left: 20%;
+
+        text-align: center !important;
+    }
+
+    #developer-list {
+        
+    }
+
+    .developer-list-item-heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: 1.2em;
+    }
+
+    .developer-list-item > a {
+        font-size: 1em;
+    }
+
+    #copyright {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    
+        font-size: 1em;
+        
+    }
 }
