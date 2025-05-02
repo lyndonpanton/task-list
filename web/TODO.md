@@ -26,14 +26,14 @@ separator between them instead of switching categories via the sidebar
 ### Interaction
 
 - [ ] Red pop-up should be displayed when a user attempts an invalid action
-    - Create an empty task
-    - Create a task that is too long (see database)
-    - Create a task that contains invalid characters (see mysql documentation)
-    - Update a task to be empty
-    - Update a task that does not exist
-    - Delete a task that does not exist
-- [ ] Orange pop-up should be displayed when a user attempt a dangerous action
-    - Delete a task that is not complete
+    - [x] Create an empty task
+    - [x] Create a task that is too long
+    - [ ] Create a task that contains invalid characters (see mysql documentation)
+    - [x] Update a task to be empty
+    - [ ] Update a task that does not exist
+    - [ ] Delete a task that does not exist
+- [x] Orange pop-up should be displayed when a user attempt a dangerous action
+    - [x] Delete a task that is not complete
 - [x] Users should be able to change between task categories
 
 ### Validation
@@ -58,6 +58,8 @@ separator between them instead of switching categories via the sidebar
         - [ ] Server-side
 - [ ] Delete
     - [ ] **Warn user if they attempt to delete an incomplete task**
+        - [x] Client-side
+        - [ ] Server-side
 
 ### Accessibility
 

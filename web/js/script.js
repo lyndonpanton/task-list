@@ -1,9 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (e) {
-    // TEST
-    setTimeout(function (e) {
-        displayPopup(e, "error", "You did not do ... properly!");
-    }, 1000);
-
     readTaskList();
 
     let taskListForms = document.getElementsByClassName("task-list-form");
@@ -196,24 +191,29 @@ document.addEventListener("DOMContentLoaded", function (e) {
         let task = e.target.parentElement.parentElement;
         let id = task.id.slice(task.id.indexOf("-") + 1);
 
-        task.remove();
+        let isComplete = task.getElementsByClassName("task-checkbox")[0].classList.contains("task-checked");
 
-        // Make fetch request and change database...
-        fetch("delete.php", {
-            method: "DELETE",
-            body: JSON.stringify({
-                "id": id
-            })
-        }).then(function (response) {
-            return response.text();
-        }).then(function (data) {
-            // console.log(data);
-        });
+        if (!isComplete) {
+            displayPopup(e, "warning", "You cannot delete a task which is not complete!");
+            return;
+        } else {
+            task.remove();
+
+            // Make fetch request and change database...
+            fetch("delete.php", {
+                method: "DELETE",
+                body: JSON.stringify({
+                    "id": id
+                })
+            }).then(function (response) {
+                return response.text();
+            }).then(function (data) {
+                // console.log(data);
+            });
+        }
     }
 
     function displayPopup(e, type, textContent) {
-        console.log("Popup displayed");
-
         let container = document.getElementById("column-right");
         let box = document.createElement("article");
         box.id = "popup";
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         let title = document.createElement("h2");
         title.classList.add("popup-title");
 
-        if (type == "error") {
+        if (type === "error") {
             box.classList.add("popup-error");
             title.textContent = "Error";
         } else {

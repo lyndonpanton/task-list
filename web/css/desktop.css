@@ -50,11 +50,11 @@ body > section {
 
 .popup-error {
     border: 15px solid #EECCEE;
-    background-color: lightcoral;
+    background-color: pink;
 }
 
 .popup-warning {
-    border: 15px solid lightcoral;
+    border: 15px solid pink;
     background-color: #EECCEE;
 }
 
