@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
         if (name.trim().length === 0) {
             displayPopup(e, "error", "You cannot create an empty task!");
             return;
+        } else if (name.trim().length > 80) {
+            displayPopup(e, "error", "You cannot create a task that has more than 80 characters long!");
+            return;
         }
 
         let hyphenIndex = e.target.parentElement.id.indexOf("-");
@@ -372,6 +375,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
         // Do not allow submission if task is empty (red outline, popup)...
         if (name.trim().length === 0) {
             displayPopup(e, "error", "You cannot update a task to be empty!");
+            return;
+        } else if (name.trim().length > 80) {
+            displayPopup(e, "error", "You cannot update a task to be more than 80 characters long!");
             return;
         }
 
