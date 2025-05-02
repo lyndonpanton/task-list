@@ -12,11 +12,11 @@ separator between them instead of switching categories via the sidebar
 
 ### Styling
 
-- [ ] **Project should adapt to different viewports**
+- [x] Project should adapt to different viewports
     - [x] Desktop
     - [x] Laptop
     - [x] Tablet
-    - [ ] Mobile
+    - [x] Mobile
 - [x] Circle icons should be left-aligned
 - [x] Task text should be left-aligned, to the right of checkboxes
 - [x] Pen icons should be right-aligned, to the left of delete icons

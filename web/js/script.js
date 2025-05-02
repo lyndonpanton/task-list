@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function (e) {
+    // TEST
+    setTimeout(function (e) {
+        displayPopup(e, "error", "You did not do ... properly!");
+    }, 1000);
+
     readTaskList();
 
     let taskListForms = document.getElementsByClassName("task-list-form");
@@ -195,6 +200,38 @@ document.addEventListener("DOMContentLoaded", function (e) {
         }).then(function (data) {
             // console.log(data);
         });
+    }
+
+    function displayPopup(e, type, textContent) {
+        console.log("Popup displayed");
+
+        let container = document.getElementById("column-right");
+        let box = document.createElement("article");
+        box.id = "popup";
+
+        let title = document.createElement("h2");
+        title.classList.add("popup-title");
+
+        if (type == "error") {
+            box.classList.add("popup-error");
+            title.textContent = "Error";
+        } else {
+            box.classList.add("popup-warning");
+            title.textContent = "Warning";
+        }
+
+        let text = document.createElement("p");
+        text.classList.add("popup-text");
+        text.textContent = textContent;
+
+        box.appendChild(title);
+        box.appendChild(text);
+
+        container.appendChild(box);
+
+        setTimeout(function (e) {
+            box.remove();
+        }, 3000);
     }
 
     function readTaskList() {

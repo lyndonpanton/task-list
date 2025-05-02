@@ -34,6 +34,42 @@ body > section {
     width: 70vw;
 }
 
+/* Popup **********************************************************************/
+#popup {
+    position: absolute;
+    top: 30vh;
+    left: 45vw;
+
+    border-radius: 6px;
+    width: 40vw;
+    height: 30vh;
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.popup-error {
+    border: 15px solid #EECCEE;
+    background-color: lightcoral;
+}
+
+.popup-warning {
+    border: 15px solid lightcoral;
+    background-color: #EECCEE;
+}
+
+.popup-title {
+    margin: 2vh 0 0 0;
+    padding: 0;
+
+    text-decoration: underline;
+}
+
+.popup-text {
+    margin: 2vh 0 0 0;
+    padding: 0;
+}
+
 /* Aside **********************************************************************/
 aside {
     position: relative;
