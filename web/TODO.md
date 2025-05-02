@@ -89,3 +89,27 @@ separator between them instead of switching categories via the sidebar
 - [x] Overflow of task categories increases parent element (and page) size
 - [x] Overflow of tasks increases parent element (and page size)
 - [x] Tasks are not displayed in their correct categories
+
+### Deployment
+
+- [ ] Add project to portfolio
+- [ ] Add setup instructions to [README.md](../README.md)
+    - `config.php`
+        - Create file
+        - Define host, user, password, database name
+    - MySQL Workbench
+        - Install
+        - Setup user
+        - Create `task_database` database
+        - Create `tasks` table
+            - id: int, AUTO_INCREMENT, NOT_NULL
+            - name: varchar(80), NOT_NULL
+            - category_id: int, NOT_NULL
+            - is_complete: bit(1), NOT_NULL
+        - Create `categories` table with columns
+            - id: int, AUTO_INCREMENT, NOT_NULL
+            - name: varchar(40), NOT_NULL
+    - XAMPP
+        - Install
+        - Start server
+        - Start database
