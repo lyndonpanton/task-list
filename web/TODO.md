@@ -93,11 +93,14 @@ separator between them instead of switching categories via the sidebar
 ### Deployment
 
 - [ ] Add project to portfolio
+    - [ ] Link
+    - [ ] Screenshot
 - [ ] Add setup instructions to [README.md](../README.md)
     - `config.php`
         - Create file
         - Define host, user, password, database name
     - MySQL Workbench
+        - Download
         - Install
         - Setup user
         - Create `task_database` database
@@ -110,6 +113,7 @@ separator between them instead of switching categories via the sidebar
             - id: int, AUTO_INCREMENT, NOT_NULL
             - name: varchar(40), NOT_NULL
     - XAMPP
+        - Download
         - Install
         - Start server
         - Start database
