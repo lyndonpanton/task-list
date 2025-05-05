@@ -84,6 +84,17 @@ relevant route on localhost:8000
 
 ## Features
 
+- Users can create task list items
+- Users can read task list items
+- Users can modify task list items
+- Users can delete task list items
+- Users cannot create or update a task list item to be empty
+- Users have a limit to how many characters long they can make a task list item
+- Users cannot delete incomplete task list items
+- Users will get a warning or error when attempting to perform an invalid
+action when creating, updating, or deleting task list items
+- Project adjusts to different viewports (3 breakpoints)
+
 ## Technology
 
 - Frontend: HTML, CSS, JavaScript

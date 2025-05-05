@@ -92,28 +92,8 @@ separator between them instead of switching categories via the sidebar
 
 ### Deployment
 
-- [ ] Add project to portfolio
-    - [ ] Link
-    - [ ] Screenshot
-- [ ] Add setup instructions to [README.md](../README.md)
-    - `config.php`
-        - Create file
-        - Define host, user, password, database name
-    - MySQL Workbench
-        - Download
-        - Install
-        - Setup user
-        - Create `task_database` database
-        - Create `tasks` table
-            - id: int, AUTO_INCREMENT, NOT_NULL
-            - name: varchar(80), NOT_NULL
-            - category_id: int, NOT_NULL
-            - is_complete: bit(1), NOT_NULL
-        - Create `categories` table with columns
-            - id: int, AUTO_INCREMENT, NOT_NULL
-            - name: varchar(40), NOT_NULL
-    - XAMPP
-        - Download
-        - Install
-        - Start server
-        - Start database
+- [x] Add project to portfolio
+    - [x] Link
+    - [x] Screenshot
+- [x] Add setup instructions to [README.md](../README.md)
+- [x] State features of the application in [README.md](../README.md)
